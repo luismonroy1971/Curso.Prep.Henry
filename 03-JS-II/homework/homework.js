@@ -52,10 +52,10 @@ function saludo(idioma) {
     return ('Guten Tag!');
   } else if (idioma === 'mandarin'){
     return ('Ni Hao!');
-  } else if (idioma === 'ingled'){
+  } else if (idioma === 'ingles'){
     return ('Hello!');
   } else {
-    return ('hola');
+    return ('Hola!');
   }
 }
 
@@ -132,13 +132,18 @@ function fizzBuzz(numero) {
   // De lo contrario, devuelve el numero
   let retorno = "";
   if ( numero % 3 === 0 ){
-    retorno = 'fizz';
-  }
-  if ( numero % 5 === 0){
+      retorno = 'fizz';
+    }
+    if ( numero % 5 === 0){
     retorno +='buzz';
+    }
+    if (retorno.length === 0){
+      return (numero);
+    }
+      else{
+        return (retorno);
+      }
   }
-  return (retorno);
-}
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
@@ -203,10 +208,12 @@ function esVerdadero(valor){
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  for (i = 0; i <= 60; i ++){
-    console.log('6 * '+ i + ' = '+ 6*i);
+  //Escribe tu código aquí 
+  let lista = [];
+  for (i = 0; i <= 10; i ++){
+    lista.push(6*i);
   }
+  return (lista);
 }
 
 function tieneTresDigitos(numero){
@@ -228,6 +235,7 @@ function doWhile(numero) {
   let veces = 1
   do{
     numero += 5;
+    veces ++;
   }while ( veces <= 8);
   return(numero);
 }
