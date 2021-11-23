@@ -25,10 +25,10 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  let suma = numeros.reduce(function(acumulador,elemento){
+  let sum = numeros.reduce(function(acumulador,elemento){
     return acumulador + elemento;
   },0);
-  cb(suma);
+  cb(sum);
 }
 
 function forEach(array, cb) {
