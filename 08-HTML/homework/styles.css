@@ -1,0 +1,64 @@
+* {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/482/994/non_2x/colorful-neon-light-background-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: rgb(221, 245, 9);
+    font-size: 3em;
+}
+
+h3 {
+    color: rgb(246, 247, 244);
+    font-size: 2em;
+}
+
+a {
+    color: rgb(246, 247, 244);
+    font-size: 2em;
+}
+
+h4 {
+    color: rgb(174, 181, 187);
+    font-size: 1.5em;
+}
+
+img {
+    width: 400px;
+    margin-top: 10px;
+
+}
+div {
+    
+}
+
+span{
+    color:rgb(221, 245, 9);
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    color: royalblue;
+}
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+    padding: 50px;
+}
+
+#thirdDiv {
+    height: 600px;
+    width: 500px;
+    background-color: turquoise;
+    border:slateblue;
+    border-style:solid;
+}
